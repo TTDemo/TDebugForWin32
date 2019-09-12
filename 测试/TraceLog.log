@@ -1,0 +1,113 @@
+77013C87: mov Dword ptr SS:[ebp-04h],FFFFFFFE 
+77013C8E: call 76FA4225 
+76FA4225: mov ecx,Dword ptr SS:[ebp-10h] 
+76FA4228: mov Dword ptr FS:[00000000],ecx  
+76FA422F: pop ecx 
+76FA4230: pop edi 
+76FA4231: pop edi 
+76FA4232: pop esi 
+76FA4233: pop ebx 
+76FA4234: mov esp, ebp 
+76FA4236: pop ebp 
+76FA4237: push ecx 
+76FA4238: ret 
+77013C93: ret 
+76FE853C: push 02 
+76FE853E: pop ecx 
+76FE853F: jmp 76FBDA4D 
+76FBDA4D: cmp Byte ptr DS:[77060004],00h 
+76FBDA54: jnz 76FBDAAD 
+76FBDA56: mov al, Byte ptr DS:[7FFE02D5] 
+76FBDA5B: and al, 03 
+76FBDA5D: cmp al, cl 
+76FBDA5F: jnz 76FD2E5F 
+76FD2E5F: mov ecx,Dword ptr SS:[ebp-54h] 
+76FD2E62: call 77013843 
+77013843: mov edi, edi 
+77013845: push ebp 
+77013846: mov ebp, esp 
+77013848: and esp, -08 
+7701384B: sub esp, 0000008C 
+77013851: mov eax, Dword ptr FS:[00000030]  
+77013857: push ebx 
+77013858: push esi 
+77013859: push edi 
+7701385A: movzx edi,Word ptr DS:[ecx+06] 
+7701385E: xor bl, bl 
+77013860: mov edx,Dword ptr DS:[eax+08h] 
+77013863: xor esi, esi 
+77013865: movzx eax,Word ptr DS:[ecx+14] 
+77013869: mov Dword ptr SS:[esp+3Ch],ebx 
+7701386D: mov Dword ptr SS:[esp+44h],edx 
+77013871: test edi, edi 
+77013873: jz 77013894 
+77013875: add eax, 28 
+77013878: add eax, ecx 
+7701387A: cmp Dword ptr DS:[eax],00h 
+7701387D: jz 7701388A 
+7701387F: mov edx,Dword ptr DS:[eax+04h] 
+77013882: add edx,Dword ptr DS:[eax] 
+77013884: cmp edx, esi 
+77013886: jbe 7701388A 
+77013888: mov esi, edx 
+7701388A: add eax, 28 
+7701388D: dec edi 
+7701388E: jnz 7701387A 
+7701387A: cmp Dword ptr DS:[eax],00h 
+7701387D: jz 7701388A 
+7701387F: mov edx,Dword ptr DS:[eax+04h] 
+77013882: add edx,Dword ptr DS:[eax] 
+77013884: cmp edx, esi 
+77013886: jbe 7701388A 
+77013888: mov esi, edx 
+7701388A: add eax, 28 
+7701388D: dec edi 
+7701388E: jnz 7701387A 
+7701387A: cmp Dword ptr DS:[eax],00h 
+7701387D: jz 7701388A 
+7701387F: mov edx,Dword ptr DS:[eax+04h] 
+77013882: add edx,Dword ptr DS:[eax] 
+77013884: cmp edx, esi 
+77013886: jbe 7701388A 
+77013888: mov esi, edx 
+7701388A: add eax, 28 
+7701388D: dec edi 
+7701388E: jnz 7701387A 
+77013890: mov edx,Dword ptr SS:[esp+44h] 
+77013894: mov eax,Dword ptr DS:[ecx+000000AC] 
+7701389A: test eax, eax 
+7701389C: jz 770138D0 
+7701389E: mov ebx,Dword ptr DS:[ecx+000000A8] 
+770138A4: add ebx, edx 
+770138A6: xor edx, edx 
+770138A8: push 1C 
+770138AA: pop edi 
+770138AB: div edi 
+770138AD: mov edi, eax 
+770138AF: test edi, edi 
+770138B1: jz 770138CC 
+770138B3: lea edx,Dword ptr DS:[ebx+10h] 
+770138B6: cmp Dword ptr DS:[edx],00h 
+770138B9: jz 770138C6 
+770138BB: mov eax,Dword ptr DS:[edx+08h] 
+770138BE: add eax,Dword ptr DS:[edx] 
+770138C0: cmp eax, esi 
+770138C2: jbe 770138C6 
+770138C6: add edx, 1C 
+770138C9: dec edi 
+770138CA: jnz 770138B6 
+770138CC: mov ebx,Dword ptr SS:[esp+3Ch] 
+770138D0: mov edx,Dword ptr DS:[ecx+0000009C] 
+770138D6: test edx, edx 
+770138D8: jz 770138E8 
+770138E8: push 00 
+770138EA: push 30 
+770138EC: lea eax,Dword ptr SS:[esp+70h] 
+770138F0: push eax 
+770138F1: push 25 
+770138F3: push -01 
+770138F5: call 76F9C3C0 
+76F9C3C0: mov eax, 00000018 
+76F9C3C5: call Dword ptr FS:[000000C0]  
+76E91218: jmp 0033:76E91D84Far jmp 
+76E91D84: dec ecx 

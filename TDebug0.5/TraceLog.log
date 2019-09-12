@@ -1,0 +1,10 @@
+00401141: mov ebp, esp 
+00401141: mov ebp, esp 
+00401143: push -01 
+00401145: push 00422130 
+0040114A: push 004041F0 
+0040114F: mov eax, Dword ptr FS:[00000000]  
+00401155: push eax 
+00401156: mov Dword ptr FS:[00000000],esp  
+0040115D: add esp, -10 
+00401160: push ebx 

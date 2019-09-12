@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{7d9e4f0d-d45c-4929-9ace-11755fa06292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Comm">
+      <UniqueIdentifier>{d4165952-953f-43bc-8407-955fb6ad73d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TDebug">
+      <UniqueIdentifier>{b3381ff4-dcfd-48bf-a7ae-a9091457cfad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TDebugUI">
+      <UniqueIdentifier>{561891d0-dffa-4d25-af90-b11d6c00f953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TDebug\Event">
+      <UniqueIdentifier>{c0780741-4a94-4201-aa01-338781227114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TDebug\BreakPoint">
+      <UniqueIdentifier>{354266ce-e139-4ee2-85c6-a126a341ea34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TDebug\Cmdline">
+      <UniqueIdentifier>{ca79492f-fbf5-4113-bc8f-3208f1349f6b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebug\BreakPoint.cpp">
+      <Filter>TDebug\BreakPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebug\DllEvent.cpp">
+      <Filter>TDebug\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebug\ExceptionEvent.cpp">
+      <Filter>TDebug\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebug\ThreadProcessEvent.cpp">
+      <Filter>TDebug\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\TDebugFunc.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebug\TDebug.cpp">
+      <Filter>TDebug</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebugUI\TDebugUI.cpp">
+      <Filter>TDebugUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebug\TDebugCmdline.cpp">
+      <Filter>TDebug\Cmdline</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebug\BreakPoint.h">
+      <Filter>TDebug\BreakPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebug\DllEvent.h">
+      <Filter>TDebug\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebug\ExceptionEvent.h">
+      <Filter>TDebug\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebug\ThreadProcessEvent.h">
+      <Filter>TDebug\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\TDebugFunc.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebug\TDebug.h">
+      <Filter>TDebug</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\Decode2Asm.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebugUI\TDebugUI.h">
+      <Filter>TDebugUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebug\TDebugCmdline.h">
+      <Filter>TDebug\Cmdline</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebug\ICmdline.h">
+      <Filter>TDebug\Cmdline</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
